@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brenscheidt Autokühler GmbH | Fahrzeugkühlung & Klimatisierung</title>
+    <meta name="description" content="Spezialist für Fahrzeugkühler, Klimatisierung und Ersatzteile in Dortmund und Osnabrück. Seit über 50 Jahren." />
+    
+    <!-- Fonts: Rajdhani (Technical/Industrial) and Inter (Clean Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Rajdhani', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#0F4C81', // Classic Strong Blue
+                dark: '#082D4F',
+                light: '#367ABD'
+              },
+              secondary: {
+                DEFAULT: '#FF4500', // Safety Orange (High Contrast)
+                hover: '#CC3700'
+              },
+              industrial: {
+                50: '#F8FAFC',
+                100: '#F1F5F9',
+                800: '#1E293B',
+                900: '#0F172A',
+                950: '#020617', // Deepest Slate
+              }
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)",
+              'grid-dark': "linear-gradient(to right, #ffffff10 1px, transparent 1px), linear-gradient(to bottom, #ffffff10 1px, transparent 1px)",
+            },
+            transitionTimingFunction: {
+              'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px; /* Offset for fixed navbar */
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020617;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 0px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FF4500;
+      }
+      
+      /* Selection color */
+      ::selection {
+        background-color: #FF4500;
+        color: white;
+      }
+
+      /* Map Grayscale Filter */
+      .map-filter {
+        filter: grayscale(100%) invert(90%) contrast(85%);
+        transition: filter 0.5s ease;
+      }
+      .map-filter:hover {
+        filter: grayscale(0%) invert(0%) contrast(100%);
+      }
+
+      /* Reduce Motion */
+      @media (prefers-reduced-motion: reduce) {
+        *, ::before, ::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+      
+      .blur-load {
+        filter: blur(20px);
+        transition: filter 0.5s ease-out;
+      }
+      .blur-loaded {
+        filter: blur(0);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-slate-800 antialiased overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
