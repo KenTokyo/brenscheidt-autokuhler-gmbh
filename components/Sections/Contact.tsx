@@ -30,8 +30,8 @@ const Contact: React.FC = () => {
                  <div>
                     <h4 className="text-lg font-bold font-display text-white mb-1">Rufen Sie uns an</h4>
                     <p className="text-gray-400 text-sm mb-4">Persönliche Beratung & Terminvereinbarung</p>
-                    <a href="tel:02319311930" className="text-2xl font-display font-bold text-white hover:text-secondary transition-colors block">
-                      0231 931193-0
+                    <a href="tel:+49000000000" className="text-2xl font-display font-bold text-white hover:text-secondary transition-colors block">
+                      +49 000 000000
                     </a>
                  </div>
                </div>
@@ -46,8 +46,8 @@ const Contact: React.FC = () => {
                  <div className="w-full">
                     <h4 className="text-lg font-bold font-display text-white mb-1">Schreiben Sie uns</h4>
                     <p className="text-gray-400 text-sm mb-4">Schnelle Antwort auf Ihre Anfrage</p>
-                    <a href="mailto:info@brenscheidt.de" className="text-lg font-bold text-white hover:text-secondary transition-colors block break-all">
-                       info@brenscheidt.de
+                    <a href="mailto:info@example.com" className="text-lg font-bold text-white hover:text-secondary transition-colors block break-all">
+                       info@example.com
                     </a>
                  </div>
                </div>
@@ -83,12 +83,12 @@ const Contact: React.FC = () => {
                 <div className="flex items-center gap-2 text-secondary font-bold text-sm uppercase tracking-wider mb-1">
                    <MapPin size={14} /> Standort
                 </div>
-                <div className="text-white font-display font-bold">Dortmund, Deusener Str. 108</div>
+                <div className="text-white font-display font-bold">Dortmund, Musterstrasse 1, 44135 Dortmund</div>
              </div>
 
              {/* Functional Google Maps Iframe with Grayscale Filter */}
              <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.428236168276!2d7.4313533769365!3d51.54205567182116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b919e8a0b0b0b1%3A0x42760fc4a2a0!2sBrenscheidt%20Autok%C3%BChler%20GmbH!5e0!3m2!1sde!2sde!4v1709900000000!5m2!1sde!2sde"
+               src="https://www.google.com/maps/search/?api=1&query=Musterstrasse+1+44135+Dortmund"
                width="100%" 
                height="100%" 
                style={{ border: 0 }} 
@@ -108,7 +108,7 @@ const Contact: React.FC = () => {
         
         {/* Bottom CTA */}
         <ScrollReveal delay={400} className="flex justify-center" animation="fade-up">
-           <a href="https://www.google.com/maps/dir//Brenscheidt+Autok%C3%BChler+GmbH,+Deusener+Str.+108,+44369+Dortmund" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-bold uppercase tracking-wider border-b border-white/10 hover:border-secondary pb-1">
+           <a href="https://www.google.com/maps/search/?api=1&query=Musterstrasse+1+44135+Dortmund" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-bold uppercase tracking-wider border-b border-white/10 hover:border-secondary pb-1">
               Route in Google Maps planen <ArrowRight size={14} />
            </a>
         </ScrollReveal>

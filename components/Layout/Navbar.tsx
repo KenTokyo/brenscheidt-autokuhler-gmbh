@@ -72,11 +72,11 @@ const Navbar: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-4 pl-4 border-l border-white/10">
-                 <a href="tel:02319311930" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors group">
+                 <a href="tel:+49000000000" className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors group">
                     <div className="w-8 h-8 flex items-center justify-center rounded-sm bg-white/5 group-hover:bg-secondary transition-colors text-white">
                       <Phone size={14} />
                     </div>
-                    <span className="text-sm font-display font-bold hidden xl:inline group-hover:text-white">0231 931193-0</span>
+                    <span className="text-sm font-display font-bold hidden xl:inline group-hover:text-white">+49 000 000000</span>
                  </a>
                  
                  <a 
@@ -129,11 +129,11 @@ const Navbar: React.FC = () => {
                 <ShoppingCart size={20} /> Online Shop
              </a>
              <div className="grid grid-cols-2 gap-4">
-                <a href="tel:02319311930" className="bg-white/5 border border-white/10 p-4 rounded-sm text-center active:bg-white/10">
+                <a href="tel:+49000000000" className="bg-white/5 border border-white/10 p-4 rounded-sm text-center active:bg-white/10">
                    <Phone className="mx-auto text-gray-400 mb-2" />
                    <span className="text-white text-sm font-bold">Anrufen</span>
                 </a>
-                <a href="mailto:info@brenscheidt.de" className="bg-white/5 border border-white/10 p-4 rounded-sm text-center active:bg-white/10">
+                <a href="mailto:info@example.com" className="bg-white/5 border border-white/10 p-4 rounded-sm text-center active:bg-white/10">
                    <div className="mx-auto text-gray-400 mb-2 w-6 h-6 flex items-center justify-center font-serif italic">@</div>
                    <span className="text-white text-sm font-bold">E-Mail</span>
                 </a>

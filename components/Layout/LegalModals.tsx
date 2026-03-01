@@ -52,18 +52,18 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, onClose, title, type }
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-bold text-industrial-900 mb-2">Angaben gemäß § 5 TMG</h3>
+                  <h3 className="font-bold text-industrial-900 mb-2">Angaben gemäß § 5 DDG</h3>
                   <p>
                     Brenscheidt Autokühler GmbH<br />
-                    Deusener Straße 108<br />
-                    44369 Dortmund
+                    Musterstrasse 1, 44135 Dortmund<br />
+                    44135 Dortmund
                   </p>
                 </div>
                 <div>
                   <h3 className="font-bold text-industrial-900 mb-2">Kontakt</h3>
                   <p>
-                    Telefon: 0231 931193-0<br />
-                    E-Mail: info@brenscheidt.de
+                    Telefon: +49 000 000000<br />
+                    E-Mail: info@example.com
                   </p>
                 </div>
               </div>
